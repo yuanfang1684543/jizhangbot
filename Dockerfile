@@ -12,4 +12,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD python web_server.py & python -m bot.main
+CMD ["sh", "-c", "python web_server.py & python -m bot.main"]
